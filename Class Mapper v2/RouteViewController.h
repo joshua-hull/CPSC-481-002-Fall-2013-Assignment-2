@@ -9,6 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface RouteViewController : UIViewController
+
 @property (weak, nonatomic) IBOutlet UIButton *infoButton;
+
+@property (weak, nonatomic) IBOutlet UITextField *toField;
+@property (weak, nonatomic) IBOutlet UITextField *fromField;
+
+@property (weak, nonatomic) IBOutlet UIButton *routeButton;
 
 @end

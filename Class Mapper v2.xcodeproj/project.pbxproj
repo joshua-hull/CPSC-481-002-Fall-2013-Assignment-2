@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4282196B17EE583300E46700 /* Map.png in Resources */ = {isa = PBXBuildFile; fileRef = 4282196A17EE583300E46700 /* Map.png */; };
+		4282196D17EE64A900E46700 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4282196C17EE64A900E46700 /* MapKit.framework */; };
 		42B7DC8B17EE42D500119F7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B7DC8A17EE42D500119F7C /* Foundation.framework */; };
 		42B7DC8D17EE42D500119F7C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B7DC8C17EE42D500119F7C /* CoreGraphics.framework */; };
 		42B7DC8F17EE42D500119F7C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B7DC8E17EE42D500119F7C /* UIKit.framework */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4282196A17EE583300E46700 /* Map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Map.png; sourceTree = "<group>"; };
+		4282196C17EE64A900E46700 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		42B7DC8717EE42D500119F7C /* Class Mapper v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Class Mapper v2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42B7DC8A17EE42D500119F7C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		42B7DC8C17EE42D500119F7C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -68,6 +72,7 @@
 			files = (
 				42B7DC8D17EE42D500119F7C /* CoreGraphics.framework in Frameworks */,
 				42B7DC8F17EE42D500119F7C /* UIKit.framework in Frameworks */,
+				4282196D17EE64A900E46700 /* MapKit.framework in Frameworks */,
 				42B7DC8B17EE42D500119F7C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,6 +112,7 @@
 		42B7DC8917EE42D500119F7C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4282196C17EE64A900E46700 /* MapKit.framework */,
 				42B7DC8A17EE42D500119F7C /* Foundation.framework */,
 				42B7DC8C17EE42D500119F7C /* CoreGraphics.framework */,
 				42B7DC8E17EE42D500119F7C /* UIKit.framework */,
@@ -136,6 +142,7 @@
 		42B7DC9117EE42D500119F7C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4282196A17EE583300E46700 /* Map.png */,
 				42B7DC9217EE42D500119F7C /* Class Mapper v2-Info.plist */,
 				42B7DC9317EE42D500119F7C /* InfoPlist.strings */,
 				42B7DC9617EE42D500119F7C /* main.m */,
@@ -209,6 +216,13 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Joshua Hull";
 				TargetAttributes = {
+					42B7DC8617EE42D500119F7C = {
+						SystemCapabilities = {
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					42B7DCAA17EE42D500119F7C = {
 						TestTargetID = 42B7DC8617EE42D500119F7C;
 					};
@@ -238,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4282196B17EE583300E46700 /* Map.png in Resources */,
 				42B7DCA617EE42D500119F7C /* Images.xcassets in Resources */,
 				42B7DC9517EE42D500119F7C /* InfoPlist.strings in Resources */,
 				42B7DC9E17EE42D500119F7C /* Main.storyboard in Resources */,
