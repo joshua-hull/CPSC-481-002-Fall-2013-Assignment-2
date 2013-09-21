@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 Joshua Hull. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "MapViewController.h"
 
-@interface SecondViewController ()
+@interface MapViewController ()
 
 @end
 
-@implementation SecondViewController
+@implementation MapViewController
 
 - (void)viewDidLoad
 {

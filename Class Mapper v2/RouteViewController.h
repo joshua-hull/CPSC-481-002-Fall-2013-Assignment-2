@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  FirstViewController.h
 //  Class Mapper v2
 //
 //  Created by Joshua Hull on 9/21/13.
@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+@interface RouteViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *infoButton;
 
 @end

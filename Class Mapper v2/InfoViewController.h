@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  InfoViewController.h
 //  Class Mapper v2
 //
 //  Created by Joshua Hull on 9/21/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface InfoViewController : UIViewController
 
 @end

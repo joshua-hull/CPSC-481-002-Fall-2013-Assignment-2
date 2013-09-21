@@ -14,14 +14,15 @@
 		42B7DC9717EE42D500119F7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B7DC9617EE42D500119F7C /* main.m */; };
 		42B7DC9B17EE42D500119F7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B7DC9A17EE42D500119F7C /* AppDelegate.m */; };
 		42B7DC9E17EE42D500119F7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42B7DC9C17EE42D500119F7C /* Main.storyboard */; };
-		42B7DCA117EE42D500119F7C /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B7DCA017EE42D500119F7C /* FirstViewController.m */; };
-		42B7DCA417EE42D500119F7C /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B7DCA317EE42D500119F7C /* SecondViewController.m */; };
+		42B7DCA117EE42D500119F7C /* RouteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B7DCA017EE42D500119F7C /* RouteViewController.m */; };
+		42B7DCA417EE42D500119F7C /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B7DCA317EE42D500119F7C /* MapViewController.m */; };
 		42B7DCA617EE42D500119F7C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42B7DCA517EE42D500119F7C /* Images.xcassets */; };
 		42B7DCAD17EE42D500119F7C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B7DCAC17EE42D500119F7C /* XCTest.framework */; };
 		42B7DCAE17EE42D500119F7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B7DC8A17EE42D500119F7C /* Foundation.framework */; };
 		42B7DCAF17EE42D500119F7C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B7DC8E17EE42D500119F7C /* UIKit.framework */; };
 		42B7DCB717EE42D500119F7C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42B7DCB517EE42D500119F7C /* InfoPlist.strings */; };
 		42B7DCB917EE42D500119F7C /* Class_Mapper_v2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B7DCB817EE42D500119F7C /* Class_Mapper_v2Tests.m */; };
+		42B7DCC417EE464700119F7C /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B7DCC317EE464700119F7C /* InfoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,16 +47,18 @@
 		42B7DC9917EE42D500119F7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		42B7DC9A17EE42D500119F7C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		42B7DC9D17EE42D500119F7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		42B7DC9F17EE42D500119F7C /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		42B7DCA017EE42D500119F7C /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		42B7DCA217EE42D500119F7C /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		42B7DCA317EE42D500119F7C /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		42B7DC9F17EE42D500119F7C /* RouteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouteViewController.h; sourceTree = "<group>"; };
+		42B7DCA017EE42D500119F7C /* RouteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouteViewController.m; sourceTree = "<group>"; };
+		42B7DCA217EE42D500119F7C /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		42B7DCA317EE42D500119F7C /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		42B7DCA517EE42D500119F7C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		42B7DCAB17EE42D500119F7C /* Class Mapper v2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Class Mapper v2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42B7DCAC17EE42D500119F7C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		42B7DCB417EE42D500119F7C /* Class Mapper v2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Class Mapper v2Tests-Info.plist"; sourceTree = "<group>"; };
 		42B7DCB617EE42D500119F7C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		42B7DCB817EE42D500119F7C /* Class_Mapper_v2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Class_Mapper_v2Tests.m; sourceTree = "<group>"; };
+		42B7DCC217EE464700119F7C /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		42B7DCC317EE464700119F7C /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,10 +121,12 @@
 				42B7DC9917EE42D500119F7C /* AppDelegate.h */,
 				42B7DC9A17EE42D500119F7C /* AppDelegate.m */,
 				42B7DC9C17EE42D500119F7C /* Main.storyboard */,
-				42B7DC9F17EE42D500119F7C /* FirstViewController.h */,
-				42B7DCA017EE42D500119F7C /* FirstViewController.m */,
-				42B7DCA217EE42D500119F7C /* SecondViewController.h */,
-				42B7DCA317EE42D500119F7C /* SecondViewController.m */,
+				42B7DCC217EE464700119F7C /* InfoViewController.h */,
+				42B7DCC317EE464700119F7C /* InfoViewController.m */,
+				42B7DC9F17EE42D500119F7C /* RouteViewController.h */,
+				42B7DCA017EE42D500119F7C /* RouteViewController.m */,
+				42B7DCA217EE42D500119F7C /* MapViewController.h */,
+				42B7DCA317EE42D500119F7C /* MapViewController.m */,
 				42B7DCA517EE42D500119F7C /* Images.xcassets */,
 				42B7DC9117EE42D500119F7C /* Supporting Files */,
 			);
@@ -254,9 +259,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42B7DCA417EE42D500119F7C /* SecondViewController.m in Sources */,
+				42B7DCA417EE42D500119F7C /* MapViewController.m in Sources */,
 				42B7DC9B17EE42D500119F7C /* AppDelegate.m in Sources */,
-				42B7DCA117EE42D500119F7C /* FirstViewController.m in Sources */,
+				42B7DCA117EE42D500119F7C /* RouteViewController.m in Sources */,
+				42B7DCC417EE464700119F7C /* InfoViewController.m in Sources */,
 				42B7DC9717EE42D500119F7C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,7 +346,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -373,7 +379,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -387,7 +393,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Class Mapper v2/Class Mapper v2-Prefix.pch";
 				INFOPLIST_FILE = "Class Mapper v2/Class Mapper v2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -400,7 +408,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Class Mapper v2/Class Mapper v2-Prefix.pch";
 				INFOPLIST_FILE = "Class Mapper v2/Class Mapper v2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -466,6 +476,7 @@
 				42B7DCBE17EE42D500119F7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		42B7DCBF17EE42D500119F7C /* Build configuration list for PBXNativeTarget "Class Mapper v2Tests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +485,7 @@
 				42B7DCC117EE42D500119F7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
