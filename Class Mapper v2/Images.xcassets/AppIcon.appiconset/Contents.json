@@ -3,6 +3,11 @@
     {
       "idiom" : "iphone",
       "size" : "29x29",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "iphone",
+      "size" : "29x29",
       "scale" : "2x"
     },
     {
@@ -11,8 +16,21 @@
       "scale" : "2x"
     },
     {
+      "size" : "57x57",
       "idiom" : "iphone",
+      "filename" : "Map@57x57.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "57x57",
+      "idiom" : "iphone",
+      "filename" : "Map@114x114.png",
+      "scale" : "2x"
+    },
+    {
       "size" : "60x60",
+      "idiom" : "iphone",
+      "filename" : "Map@120x120.png",
       "scale" : "2x"
     }
   ],
