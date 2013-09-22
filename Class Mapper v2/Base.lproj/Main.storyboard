@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
-        <!--Route View Controller - First-->
+        <!--Route View Controller - routeView-->
         <scene sceneID="W3I-pn-N6e">
             <objects>
-                <viewController title="First" id="CZ4-MO-1fc" customClass="RouteViewController" sceneMemberID="viewController">
+                <viewController title="routeView" id="CZ4-MO-1fc" customClass="RouteViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="B5j-qW-qP7"/>
                         <viewControllerLayoutGuide type="bottom" id="Ava-wO-7wq"/>
@@ -83,7 +83,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Route" image="first" id="u1e-5L-l1D"/>
-                    <navigationItem key="navigationItem" id="MOR-Xm-Zb5"/>
                     <connections>
                         <outlet property="fromField" destination="JeO-bH-6W7" id="413-Wd-lBb"/>
                         <outlet property="infoButton" destination="gVN-0E-yyy" id="bNa-Fg-3pQ"/>
@@ -125,10 +124,10 @@
             </objects>
             <point key="canvasLocation" x="1174" y="-138"/>
         </scene>
-        <!--Map View Controller - Second-->
+        <!--Map View Controller - mapView-->
         <scene sceneID="ot8-2e-RuS">
             <objects>
-                <viewController title="Second" id="QUy-BD-bpt" customClass="MapViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mapViewController" title="mapView" id="QUy-BD-bpt" customClass="MapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Acy-kj-sIu"/>
                         <viewControllerLayoutGuide type="bottom" id="tfO-0d-gFg"/>
@@ -141,11 +140,25 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9r-TO-iwl">
+                                <rect key="frame" x="282" y="372" width="18" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="mapInfo:" destination="QUy-BD-bpt" eventType="touchUpInside" id="VhP-vW-REN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="second" id="Z7h-1E-pvt"/>
+                    <toolbarItems/>
+                    <keyCommands/>
                     <connections>
+                        <outlet property="infoButton" destination="a9r-TO-iwl" id="99z-n6-a1k"/>
                         <outlet property="mapView" destination="9eC-aF-2Gy" id="hDM-5v-9DI"/>
                     </connections>
                 </viewController>

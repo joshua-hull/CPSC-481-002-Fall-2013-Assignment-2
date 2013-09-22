@@ -10,10 +10,27 @@
 
 @implementation AppDelegate
 
+@synthesize window;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
     return YES;
+}
+
+-(void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification{
+    
+    UIApplicationState state = [application applicationState];
+    UITabBarController *tbc = (UITabBarController*)self.window.rootViewController;
+    
+    if(state != UIApplicationStateActive){
+        UITabBarController *tbc = (UITabBarController*)self.window.rootViewController;
+        tbc.selectedIndex = 1;
+    } else{
+        [[tbc.viewControllers objectAtIndex:1] tabBarItem].badgeValue = @"!";
+    }
+    
+    
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

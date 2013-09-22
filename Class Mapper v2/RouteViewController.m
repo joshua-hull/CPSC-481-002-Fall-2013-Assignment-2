@@ -59,13 +59,11 @@
         [[UIApplication sharedApplication] scheduleLocalNotification:directionsNotificaiton];
     }
     
-    UIAlertView *alert = [[UIAlertView alloc]
-                          initWithTitle:@"TODO: Store Routes"
-                          message:popupContents
-                          delegate:nil
-                          cancelButtonTitle:@"Dismiss"
-                          otherButtonTitles:nil
-                          ];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"TODO: Store Routes"
+                                                    message:popupContents
+                                                   delegate:nil
+                                          cancelButtonTitle:@"Dismiss"
+                                          otherButtonTitles:nil];
     [alert show];
 }
 @end
