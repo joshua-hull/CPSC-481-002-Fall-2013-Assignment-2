@@ -40,6 +40,7 @@
 /* Begin PBXFileReference section */
 		4282196A17EE583300E46700 /* Map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Map.png; sourceTree = "<group>"; };
 		4282196C17EE64A900E46700 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4282196E17EE712300E46700 /* Daniel Hall, Clemson Univeristy.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Daniel Hall, Clemson Univeristy.gpx"; sourceTree = "<group>"; };
 		42B7DC8717EE42D500119F7C /* Class Mapper v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Class Mapper v2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42B7DC8A17EE42D500119F7C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		42B7DC8C17EE42D500119F7C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -132,6 +133,7 @@
 				42B7DC9F17EE42D500119F7C /* RouteViewController.h */,
 				42B7DCA017EE42D500119F7C /* RouteViewController.m */,
 				42B7DCA217EE42D500119F7C /* MapViewController.h */,
+				4282196E17EE712300E46700 /* Daniel Hall, Clemson Univeristy.gpx */,
 				42B7DCA317EE42D500119F7C /* MapViewController.m */,
 				42B7DCA517EE42D500119F7C /* Images.xcassets */,
 				42B7DC9117EE42D500119F7C /* Supporting Files */,
