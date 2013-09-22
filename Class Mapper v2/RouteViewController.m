@@ -12,6 +12,9 @@
 
 @end
 
+/**
+ First view the user is presented with. Allows them to enter starting point and destination. Also fires off a notification and popup when they add a route.
+ */
 @implementation RouteViewController
 
 @synthesize infoButton;
@@ -21,30 +24,42 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-- (IBAction)doneEditingFrom:(id)sender {
+
+/**
+ Called when the user hits next when done entering the from location.
+ @param sender The id of the button that triggered us.
+ */
+- (IBAction)doneEditingFrom:(id)sender
+{
     [toField becomeFirstResponder];
 }
-- (IBAction)doneEditingTo:(id)sender {
+
+/**
+ Called when the user hits done when done entering the to location.
+ @param sender The id of the button that triggered us.
+ */
+- (IBAction)doneEditingTo:(id)sender
+{
     [toField resignFirstResponder];
-    
 }
-- (IBAction)addRoute:(id)sender {
-    
-    
+
+/**
+ Triggered when the user hits the 'Add Route' button. Verifies that the user entered a from location. Pops up a notification explaining what happened and also fires of a local notification.
+ */
+- (IBAction)addRoute:(id)sender
+{
     NSString *popupContents;
     
     if(fromField.text.length == 0){
         popupContents = @"Please enter a 'From' Address.";
     } else{
-        popupContents = [NSString stringWithFormat:@"%s %@ %s %@","In a future version of Class Mapper we will store routes in a local database. In the mean time...\n\nGetting directions from", fromField.text," to ",toField.text];
+        popupContents = [NSString stringWithFormat:@"%s %@ %s %@","In a future version of Class Mapper we will store routes in a local database. In the mean time...\nGetting directions from", fromField.text," to ",toField.text];
         
         UILocalNotification *directionsNotificaiton = [[UILocalNotification alloc] init];
         

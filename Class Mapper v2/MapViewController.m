@@ -20,7 +20,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
     UITabBarController *tbc = (UITabBarController*)self.parentViewController;
     [[tbc.viewControllers objectAtIndex:1] tabBarItem].badgeValue = nil;
     
@@ -57,18 +57,15 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)mapInfo:(id)sender {
-    
+- (IBAction)mapInfo:(id)sender
+{
     UIAlertView *alert =[[UIAlertView alloc] initWithTitle:@"Map Info"
-                                                  message:@"Futire versions of Class Mapper will show the starting, finishing, and current locations on this map. Currently the start and end are hard coded but the current location does work."
+                                                  message:@"Future versions of Class Mapper will show the starting, finishing, and current locations on this map. Currently the start and end are hard coded but the current location feature does work."
                                                  delegate:nil
                                         cancelButtonTitle:@"Dismiss"
                                         otherButtonTitles:nil];
-    
     [alert show];
 }
-
 @end

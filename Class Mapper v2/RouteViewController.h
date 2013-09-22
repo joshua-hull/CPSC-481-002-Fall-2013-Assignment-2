@@ -10,11 +10,9 @@
 
 @interface RouteViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIButton *infoButton;
-
-@property (weak, nonatomic) IBOutlet UITextField *toField;
-@property (weak, nonatomic) IBOutlet UITextField *fromField;
-
-@property (weak, nonatomic) IBOutlet UIButton *routeButton;
+@property (weak, nonatomic) IBOutlet UIButton *infoButton; /*!< Button that launches the infoView. */
+@property (weak, nonatomic) IBOutlet UITextField *toField; /*!< Field user enters starting location. */
+@property (weak, nonatomic) IBOutlet UITextField *fromField; /*!< Field user enters destination. */
+@property (weak, nonatomic) IBOutlet UIButton *routeButton; /*!< Button user clicks to add route. */
 
 @end
